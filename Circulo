@@ -1,0 +1,47 @@
+package br.edu.figplanas;
+
+import java.util.Scanner;
+
+public class Circulo {
+
+	private double raio;
+    private double area;
+
+    public Circulo() {
+        
+    }
+
+   
+    public void recebeRaio() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Digite o valor do raio:");
+        raio = sc.nextDouble();
+    }
+
+    
+    public void recebeRaio(double r) {
+        raio = r;
+    }
+
+    
+    public void retornaRaio() {
+        System.out.println("O raio do círculo é: " + raio);
+    }
+
+   
+    public void retornaArea() {
+        System.out.println("A área do círculo é: " + area);
+    }
+
+    
+    public void calcArea() {
+        area = Math.PI * Math.pow(raio, 2);
+    }
+
+    
+    public void listaAtributos() {
+        System.out.println("Raio do círculo: " + raio);
+        System.out.println("Área do círculo: " + area);
+        System.out.println("------------------------------------------");
+    }
+}
