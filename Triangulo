@@ -2,46 +2,57 @@ package br.edu.figplanas;
 
 import java.util.Scanner;
 
-public class Circulo {
+public class Triangulo {
+	private double base;
+	private double altura;
+	private double area;
+	
+	public Triangulo () {
+		
+	}
 
-	private double raio;
-    private double area;
 
-    public Circulo() {
-        
-    }
+	public void recebeAltura() {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Digite o valor da Altura");
+		altura = sc.nextDouble();
+	}
+	
+	public void recebeAltura(double h) {
+		altura = h;
+	}
+	
+	public void recebeBase() {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Digite o valor da Base:");
+		base = sc.nextDouble();
+	}
+	
+	public void recebeBase(double b) {
+		base = b;
+	}
+	
+	public void retornaBase() {
+		System.out.println("A altura do triangulo é:" + altura );
+	}
+	
+	public void retornaAltura() {
+		System.out.println("A base do triangulo é:" + base );
+	}
+	
+	public void retornaArea() {
+		System.out.println("A area do triangulo é:" + area);
+	}
+	
+	public void calcArea() {
+		area = (base * altura)/2;
+	}
+	
+	public void listaAtributos() {
+		System.out.println("A altura do triangulo é:" + altura);
+		System.out.println("A base do triangulo é:" + base);
+		System.out.println("A area do triangulo é:" + area);
+		System.out.println("------------------------------------------");
 
-   
-    public void recebeRaio() {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Digite o valor do raio:");
-        raio = sc.nextDouble();
-    }
-
-    
-    public void recebeRaio(double r) {
-        raio = r;
-    }
-
-    
-    public void retornaRaio() {
-        System.out.println("O raio do círculo é: " + raio);
-    }
-
-   
-    public void retornaArea() {
-        System.out.println("A área do círculo é: " + area);
-    }
-
-    
-    public void calcArea() {
-        area = Math.PI * Math.pow(raio, 2);
-    }
-
-    
-    public void listaAtributos() {
-        System.out.println("Raio do círculo: " + raio);
-        System.out.println("Área do círculo: " + area);
-        System.out.println("------------------------------------------");
-    }
+	}
 }
