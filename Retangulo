@@ -1,0 +1,53 @@
+package br.edu.figplanas;
+
+import java.util.Scanner;
+
+public class Retangulo {
+	private  double base;
+	private  double altura;
+	private double area;
+	
+	public void Retangulo() {
+		
+	}
+	
+	public void recebeAltura() {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Digite o valor da altura:");
+		altura = sc.nextDouble();
+	}
+	
+	public void recebeAltura(double h) {
+		altura = h;
+	}
+	
+	public void recebeBase() {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Digite o valor da base:");
+		base = sc.nextDouble();
+	}
+	
+	public void recebeBase(double b) {
+		base = b;
+	}
+	
+	public void retornaAltura() {
+		System.out.println("A altura do retangulo é " + altura);
+	}
+	
+	public void retornaBase() {
+		System.out.println("A base do retangulo é " + base);
+	}
+	
+	public void retornaArea() {
+		System.out.println("Area do retangulo é:" + area);
+	}
+	
+	public void calcArea() {
+		area = (base * altura) / 2;
+	}
+	
+	public void ListaAtributos() {
+
+	}
+}
