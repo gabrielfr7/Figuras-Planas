@@ -1,0 +1,68 @@
+package br.edu.principal;
+import br.edu.figplanas.*;
+
+public class Principal {
+
+    public static void main(String[] args) {
+        Triangulo triangulo = new Triangulo();
+        triangulo.recebeBase(5);
+        triangulo.recebeAltura(3);
+        triangulo.calcArea();
+        System.out.println("Triângulo:");
+        triangulo.listaAtributos();
+
+        Quadrado quadrado = new Quadrado();
+        quadrado.recebeLado(4);
+        quadrado.calcArea();
+        System.out.println("Quadrado:");
+        quadrado.ListaAtributos();
+
+        Retangulo retangulo = new Retangulo();
+        retangulo.recebeBase(6);
+        retangulo.recebeAltura(2);
+        retangulo.calcArea();
+        System.out.println("Retângulo:");
+        retangulo.ListaAtributos();
+
+        Losangulo losangulo = new Losangulo();
+        losangulo.recebeDiagonalMaior(8);
+        losangulo.recebeDiagonalMenor(5);
+        losangulo.calcArea();
+        System.out.println("Losango:");
+        losangulo.listaAtributos();
+
+        Paralelogramo paralelogramo = new Paralelogramo();
+        paralelogramo.recebeBase(7);
+        paralelogramo.recebeAltura(3);
+        paralelogramo.calcArea();
+        System.out.println("Paralelogramo:");
+        paralelogramo.listaAtributos();
+
+        Hexagono hexagono = new Hexagono();
+        hexagono.recebeLado(4);
+        hexagono.calcArea();
+        System.out.println("Hexágono:");
+        hexagono.listaAtributos();
+
+        Trapezio trapezio = new Trapezio();
+        trapezio.recebeBMaior(7);
+        trapezio.recebeBMenor(5);
+        trapezio.recebeAltura(4);
+        trapezio.calcArea();
+        System.out.println("Trapézio:");
+        trapezio.listaAtributos();
+
+        Pentagono pentagono = new Pentagono();
+        pentagono.recebePerimetro(15);
+        pentagono.recebeApotema(6);
+        pentagono.calcArea();
+        System.out.println("Pentágono:");
+        pentagono.listaAtributos();
+
+        Circulo circulo = new Circulo();
+        circulo.recebeRaio(3);
+        circulo.calcArea();
+        System.out.println("Círculo:");
+        circulo.listaAtributos();
+    }
+}
