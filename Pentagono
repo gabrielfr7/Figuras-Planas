@@ -1,0 +1,58 @@
+package br.edu.figplanas;
+
+import java.util.Scanner;
+
+public class Pentagono {
+	private double perimetro;
+	private double apotema;
+	private double area;
+	
+	public Pentagono () {
+		
+	}
+	
+	public void recebePerimetro() {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Digite o valor do perimetro");
+		perimetro = sc.nextDouble();
+	}
+	
+	public void recebePerimetro(double P) {
+		perimetro = P;
+	}
+	
+	public void recebeapotema() {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Digite o valor da apotema");
+		apotema = sc.nextDouble();
+	}
+	
+	public void recebeApotema(double A) {
+		apotema = A;
+	}
+	
+	public void retornaPerimetro() {
+		System.out.println("O perimetro do pentagono é:" + perimetro );
+	}
+	
+	public void retornaApotema() {
+		System.out.println("A apotema do pentagono é:" + apotema );
+	}
+	
+	public void retornaArea() {
+		System.out.println("A area do pentagono é:" + area);
+	}
+	
+	public void calcArea() {
+		area  = (perimetro * apotema) / 2;
+		System.out.println("A area do Pentagono é: " + area);
+	}
+	
+	public void listaAtributos() {
+		System.out.println("A apotema do pentagono  é:" + apotema);
+		System.out.println("O perimetro do pentagono é:" + perimetro);
+		System.out.println("A area do pentagono é:" + area);
+		System.out.println("------------------------------------------");
+
+	}
+}
