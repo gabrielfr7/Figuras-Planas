@@ -1,0 +1,73 @@
+package br.edu.figplanas;
+
+import java.util.Scanner;
+
+public class Trapezio {
+
+	private double bMaior;
+	private double bMenor;
+	private double altura;
+	private double area;
+	
+	public Trapezio() {
+		
+	}
+	
+	public void recebeAltura() {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Digite o valor da Altura");
+		altura = sc.nextDouble();
+	}
+	
+	
+	
+	public void recebeAltura(double h) {
+		altura = h;
+	}
+	
+	public void recebebMaior() {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Digite o valor da base maior:");
+		bMaior = sc.nextDouble();
+	}
+	
+	public void recebebMenor() {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Digite o valor da base maenor:");
+		bMenor = sc.nextDouble();
+	}
+	
+	public void recebeBMaior(double B) {
+		bMaior = B;
+	}
+	
+	public void recebeBMenor(double b) {
+		bMenor = b;
+	}
+	
+	public void retornabMaior() {
+		System.out.println("A base maior é:" + bMaior );
+	}
+	
+	public void retornabMenor() {
+		System.out.println("A base maior é:" + bMenor );
+	}
+	
+	public void retornaArea() {
+		System.out.println("A area do trapezio é:" + area);
+	}
+	
+	public void calcArea() {
+		area = (bMaior + bMenor) * altura/2;
+		System.out.println("A area do Trapezio é " + area);
+	}
+	
+	public void listaAtributos() {
+		System.out.println("A base maior do trapezio é:" + bMaior);
+		System.out.println("A base menor  do trapezio é:" + bMenor);
+		System.out.println("A altura do trapezio é:" + altura);
+		System.out.println("A area do trapezio é:" + area);
+		System.out.println("------------------------------------------");
+
+	}
+}
