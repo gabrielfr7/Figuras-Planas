@@ -1,0 +1,50 @@
+package br.edu.figplanas;
+
+import java.util.Scanner;
+
+public class Losangulo {
+
+		private double DiagonalMaior;
+		private double DiagonalMenor;
+		private double area;
+		
+		public Losangulo () {
+			
+		}
+		
+		public void recebeDiagonalMaior () {
+			Scanner sc = new Scanner (System.in);
+			System.out.println("Digite o valor da diagonal maior");
+			DiagonalMaior = sc.nextDouble();
+		}
+		
+		public void recebeDiagonalMaior(double Dmaior) {
+			DiagonalMaior = Dmaior;
+		}
+		
+		public void recebeDiagonalMenor () {
+			Scanner sc = new Scanner (System.in);
+			System.out.println("Digite o valor da diagonal menor:");
+			DiagonalMenor = sc.nextDouble();
+		}
+		
+		public void recebeDiagonalMenor(double Dmenor) {
+			DiagonalMenor = Dmenor;
+		}
+		
+		public void retornaArea() {
+			System.out.println("Area do Losango é" + area);
+		}
+		
+		public void calcArea () {
+			area = (DiagonalMaior * DiagonalMenor) / 2;
+		}
+		
+		public void listaAtributos () {
+			System.out.println("A diagonal maior do Losango é :" + DiagonalMaior);
+			System.out.println("A diagonal menor do Losango é:" + DiagonalMenor);
+			System.out.println("A area do Losango é:" + area);
+			System.out.println("------------------------------------------");
+		}
+		
+}
